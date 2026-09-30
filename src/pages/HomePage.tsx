@@ -627,7 +627,7 @@ export const HomePage: React.FC = () => {
               <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-5 text-center">
                 <div className="p-2.5 rounded-xl bg-slate-50 border border-slate-100">
                   <div className="text-[10px] text-slate-400 font-arabic font-semibold mb-0.5">الدور الرئيسي</div>
-                  <div className="text-xs font-black text-slate-800 font-arabic">طالب هندسة تقنيات أمن سيبراني</div>
+                  <div className="text-xs font-black text-slate-800 font-arabic">أبحاث وهندسة الأمان السيبراني</div>
                 </div>
                 <div className="p-2.5 rounded-xl bg-slate-50 border border-slate-100">
                   <div className="text-[10px] text-slate-400 font-arabic font-semibold mb-0.5">قنوات التواصل</div>

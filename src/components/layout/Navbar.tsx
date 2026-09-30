@@ -16,7 +16,7 @@ import {
   Send
 } from 'lucide-react';
 import { Container } from './Container';
-import { AmerCyberMark } from '../ui/AmerCyberMark';
+import { AmerProLogo } from '../ui/AmerProLogo';
 
 export const Navbar: React.FC<{ onOpenCommandPalette?: () => void }> = ({ onOpenCommandPalette }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -79,11 +79,12 @@ export const Navbar: React.FC<{ onOpenCommandPalette?: () => void }> = ({ onOpen
       <Container size="xl">
         <div className="flex h-14 sm:h-16 items-center justify-between">
           
-          {/* Brand - Right side in RTL */}
-          <Link to="/" className="flex items-center gap-2 group flex-shrink-0 select-none">
+          {/* Brand - Right side in RTL with Professional Logo */}
+          <Link to="/" className="flex items-center gap-2.5 sm:gap-3 group flex-shrink-0 select-none">
+            <AmerProLogo size="md" />
             <div className="flex flex-col text-right leading-none">
               <div className="flex items-center gap-1.5">
-                <span className="font-black text-[16px] sm:text-[19px] text-slate-950 font-arabic tracking-tight group-hover:text-amber-600 transition-colors">
+                <span className="font-black text-[17px] sm:text-[20px] text-slate-950 font-arabic tracking-tight group-hover:text-amber-600 transition-colors">
                   عامر جمال
                 </span>
                 <span className="px-1.5 py-0.5 rounded bg-amber-500/10 text-amber-700 text-[9px] font-mono font-bold border border-amber-500/25 tracking-wider hidden xs:inline-block">
@@ -91,11 +92,8 @@ export const Navbar: React.FC<{ onOpenCommandPalette?: () => void }> = ({ onOpen
                 </span>
               </div>
               <div className="flex items-center gap-1.5 mt-1">
-                <span className="text-[11px] text-slate-500 font-arabic font-semibold group-hover:text-slate-800 transition-colors">
-                  طالب هندسة تقنيات أمن سيبراني
-                </span>
-                <span className="text-[9px] text-slate-400 font-mono tracking-widest hidden md:inline-block">
-                  AMER JAMAL
+                <span className="text-[10px] sm:text-[11px] text-slate-500 font-mono tracking-wider font-bold group-hover:text-slate-800 transition-colors uppercase">
+                  SECURITY RESEARCH
                 </span>
               </div>
             </div>
@@ -164,14 +162,15 @@ export const Navbar: React.FC<{ onOpenCommandPalette?: () => void }> = ({ onOpen
               <Link 
                 to="/" 
                 onClick={() => setMobileMenuOpen(false)}
-                className="flex items-center gap-2"
+                className="flex items-center gap-2.5"
               >
+                <AmerProLogo size="sm" />
                 <div className="flex flex-col text-right leading-none">
                   <span className="font-black text-lg text-slate-950 font-arabic tracking-tight">
                     عامر جمال
                   </span>
-                  <span className="text-[11px] text-slate-500 font-arabic font-semibold mt-1">
-                    طالب هندسة تقنيات أمن سيبراني
+                  <span className="text-[10px] text-amber-600 font-mono font-bold tracking-wider mt-1 uppercase">
+                    SECURITY RESEARCH
                   </span>
                 </div>
               </Link>

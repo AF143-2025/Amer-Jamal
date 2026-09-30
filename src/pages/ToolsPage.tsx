@@ -210,16 +210,19 @@ export const ToolsPage: React.FC = () => {
 
         {/* Categories matching screenshot */}
         <div className="flex flex-wrap justify-center gap-2.5 mb-12" dir="rtl">
-          <button
-            onClick={() => setSelectedCategory('All')}
-            className={`px-5 py-2.5 rounded-full font-bold text-sm font-arabic transition-all shadow-sm ${
-              selectedCategory === 'All'
-                ? 'bg-black text-amber-500 border-2 border-black'
-                : 'bg-white text-slate-700 border-2 border-slate-200 hover:border-slate-400 hover:bg-slate-50'
-            }`}
-          >
-            الكل
-          </button>
+          {/* 'الكل' sits on its own row above other categories on mobile, inline on desktop */}
+          <div className="w-full sm:w-auto flex justify-center mb-1.5 sm:mb-0">
+            <button
+              onClick={() => setSelectedCategory('All')}
+              className={`w-full max-w-[200px] sm:w-auto px-6 py-2.5 rounded-full font-bold text-sm font-arabic transition-all shadow-sm text-center ${
+                selectedCategory === 'All'
+                  ? 'bg-black text-amber-500 border-2 border-black'
+                  : 'bg-white text-slate-700 border-2 border-slate-200 hover:border-slate-400 hover:bg-slate-50'
+              }`}
+            >
+              الكل
+            </button>
+          </div>
           {categoryConfigs.map(cat => {
             const isSelected = selectedCategory === cat.id;
             const IconComp = cat.icon;

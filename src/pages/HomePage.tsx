@@ -533,13 +533,13 @@ export const HomePage: React.FC = () => {
                 <div className="w-12 h-12 rounded-xl bg-sky-500/10 text-sky-600 border border-sky-500/25 flex items-center justify-center group-hover:scale-110 transition-transform shadow-xs">
                   <Send className="h-5 w-5" />
                 </div>
-                <span className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 text-[11px] font-bold font-arabic">
-                  <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                <span className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-sky-50 text-sky-700 border border-sky-200 text-[11px] font-bold font-arabic">
+                  <span className="w-2 h-2 rounded-full bg-sky-500 animate-pulse" />
                   رد فوري
                 </span>
               </div>
               <h3 className="text-xl font-black text-slate-950 font-arabic mb-1 group-hover:text-sky-600 transition-colors">تيليجرام</h3>
-              <p className="text-xs font-mono text-slate-400 mb-3" dir="ltr">@amerjamal_sec</p>
+              <p className="text-xs font-mono text-slate-400 mb-3" dir="ltr">@a2m_8</p>
               <p className="text-xs sm:text-sm text-slate-600 font-arabic leading-relaxed mb-5 flex-1">
                 القناة الأسرع للمحادثات الفورية، الاستفسارات التقنية العاجلة، والمناقشات المباشرة.
               </p>
@@ -565,7 +565,7 @@ export const HomePage: React.FC = () => {
                 </span>
               </div>
               <h3 className="text-xl font-black text-slate-950 font-arabic mb-1 group-hover:text-rose-600 transition-colors">إنستغرام</h3>
-              <p className="text-xs font-mono text-slate-400 mb-3" dir="ltr">@amerjamal_sec</p>
+              <p className="text-xs font-mono text-slate-400 mb-3" dir="ltr">@amerjamal.cyber</p>
               <p className="text-xs sm:text-sm text-slate-600 font-arabic leading-relaxed mb-5 flex-1">
                 متابعة اليوميات التقنية، المستجدات في الثغرات، والملخصات السيبرانية المرئية.
               </p>

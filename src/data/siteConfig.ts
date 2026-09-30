@@ -77,8 +77,8 @@ mQENBF/h6... [مفتاح عامر جمال الأمني - PGP Public Key]
     github: "https://github.com/amerjamal",
     linkedin: "https://linkedin.com/in/amerjamal",
     twitter: "https://x.com/amerjamal_sec",
-    telegram: "https://t.me/amerjamal_sec",
-    instagram: "https://instagram.com/amerjamal_sec",
+    telegram: "https://t.me/a2m_8",
+    instagram: "https://instagram.com/amerjamal.cyber",
     tryhackme: "https://tryhackme.com/p/amerjamal",
     hackthebox: "https://app.hackthebox.com/users/amerjamal"
   },

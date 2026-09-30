@@ -219,7 +219,7 @@ export const ContactPage: React.FC = () => {
                     <h3 className="text-lg font-black text-slate-900 font-arabic leading-none">تيليجرام</h3>
                   </div>
                 </div>
-                <p className="text-xs font-mono text-slate-400 mb-3" dir="ltr">@amerjamal_sec</p>
+                <p className="text-xs font-mono text-slate-400 mb-3" dir="ltr">@a2m_8</p>
                 <p className="text-sm text-slate-600 font-arabic font-medium leading-relaxed mb-5">
                   القناة الأسرع لإرسال طلبك والحصول على رد فوري ومباشر.
                 </p>
@@ -242,7 +242,7 @@ export const ContactPage: React.FC = () => {
                     <h3 className="text-lg font-black text-slate-900 font-arabic leading-none">إنستغرام</h3>
                   </div>
                 </div>
-                <p className="text-xs font-mono text-slate-400 mb-3" dir="ltr">@amerjamal_sec</p>
+                <p className="text-xs font-mono text-slate-400 mb-3" dir="ltr">@amerjamal.cyber</p>
                 <p className="text-sm text-slate-600 font-arabic font-medium leading-relaxed mb-5">
                   تواصل عبر DM أو تابع آخر التحديثات التقنية والأمنية.
                 </p>

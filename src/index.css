@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 :root {
+  color-scheme: light !important;
   --color-primary: #0b8690;          /* الأخضر / السماوي الداكن الأساسي */
   --color-primary-dark: #053b44;     /* الكحلي الداكن / الأزرق البترولي */
   --color-primary-light: #12aebc;    /* نسخة أفتح قليلاً للتأثيرات */
@@ -26,12 +27,20 @@
 html {
   scroll-behavior: smooth;
   font-family: "IBM Plex Sans Arabic", 'Cairo', "Plus Jakarta Sans", sans-serif;
+  color-scheme: light !important;
 }
 
 body {
   background-color: var(--color-bg);
   color: var(--color-text);
   overflow-x: hidden;
+  color-scheme: light !important;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root, html, body {
+    color-scheme: light !important;
+  }
 }
 
 /* Glass Card */

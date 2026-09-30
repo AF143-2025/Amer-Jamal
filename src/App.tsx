@@ -39,6 +39,25 @@ function ScrollToTop() {
 export const App: React.FC = () => {
   const { isOpen, open, close } = useCommandPalette();
 
+  // Permanently enforce light mode regardless of device/OS theme
+  useEffect(() => {
+    const root = document.documentElement;
+    root.classList.remove('dark');
+    root.classList.add('light');
+    root.style.colorScheme = 'light';
+    localStorage.removeItem('theme');
+    localStorage.removeItem('aj_theme');
+
+    const observer = new MutationObserver(() => {
+      if (root.classList.contains('dark')) {
+        root.classList.remove('dark');
+      }
+    });
+    observer.observe(root, { attributes: true, attributeFilter: ['class'] });
+
+    return () => observer.disconnect();
+  }, []);
+
   return (
     <div className="relative flex flex-col min-h-screen bg-[var(--color-bg)] text-slate-900 transition-colors duration-200 selection:bg-cyan-600 selection:text-white">
       {/* Architectural Background Canvas */}

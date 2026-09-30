@@ -80,11 +80,10 @@ export const Navbar: React.FC<{ onOpenCommandPalette?: () => void }> = ({ onOpen
         <div className="flex h-14 sm:h-16 items-center justify-between">
           
           {/* Brand - Right side in RTL */}
-          <Link to="/" className="flex items-center gap-2 sm:gap-3 group flex-shrink-0 select-none">
-            <AmerCyberMark size="sm" showTooltip={false} />
+          <Link to="/" className="flex items-center gap-2 group flex-shrink-0 select-none">
             <div className="flex flex-col text-right leading-none">
               <div className="flex items-center gap-1.5">
-                <span className="font-black text-[15px] sm:text-[18px] text-slate-950 font-arabic tracking-tight group-hover:text-amber-600 transition-colors">
+                <span className="font-black text-[16px] sm:text-[19px] text-slate-950 font-arabic tracking-tight group-hover:text-amber-600 transition-colors">
                   عامر جمال
                 </span>
                 <span className="px-1.5 py-0.5 rounded bg-amber-500/10 text-amber-700 text-[9px] font-mono font-bold border border-amber-500/25 tracking-wider hidden xs:inline-block">
@@ -92,10 +91,9 @@ export const Navbar: React.FC<{ onOpenCommandPalette?: () => void }> = ({ onOpen
                 </span>
               </div>
               <div className="flex items-center gap-1.5 mt-1">
-                <span className="text-[10px] text-slate-500 font-arabic font-semibold group-hover:text-slate-800 transition-colors">
+                <span className="text-[11px] text-slate-500 font-arabic font-semibold group-hover:text-slate-800 transition-colors">
                   طالب هندسة تقنيات أمن سيبراني
                 </span>
-                <span className="w-1 h-1 rounded-full bg-emerald-500 hidden sm:inline-block animate-pulse" />
                 <span className="text-[9px] text-slate-400 font-mono tracking-widest hidden md:inline-block">
                   AMER JAMAL
                 </span>
@@ -166,15 +164,14 @@ export const Navbar: React.FC<{ onOpenCommandPalette?: () => void }> = ({ onOpen
               <Link 
                 to="/" 
                 onClick={() => setMobileMenuOpen(false)}
-                className="flex items-center gap-2.5"
+                className="flex items-center gap-2"
               >
-                <AmerCyberMark size="sm" showTooltip={false} />
                 <div className="flex flex-col text-right leading-none">
-                  <span className="font-black text-base text-slate-950 font-arabic tracking-tight">
+                  <span className="font-black text-lg text-slate-950 font-arabic tracking-tight">
                     عامر جمال
                   </span>
-                  <span className="text-[10px] text-amber-600 font-arabic font-bold mt-0.5">
-                    منصة الأمن السيبراني
+                  <span className="text-[11px] text-slate-500 font-arabic font-semibold mt-1">
+                    طالب هندسة تقنيات أمن سيبراني
                   </span>
                 </div>
               </Link>

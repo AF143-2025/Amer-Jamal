@@ -322,9 +322,7 @@ export const HomePage: React.FC = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-20">
             
-                        <div className="w-full flex items-center justify-center mb-10 relative h-px">
-              <div className="absolute h-px bg-slate-200" style={{ width: '100vw', left: '50%', transform: 'translateX(-50%)' }}></div>
-            </div>
+                        <div className="w-full max-w-4xl mx-auto h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent mb-12 sm:mb-16" />
 
             <h2 id="about-heading" className="text-4xl md:text-6xl font-black mb-6 text-black font-arabic tracking-tight">
               الفرق <span className="text-amber-600">السيبرانية</span>
@@ -426,9 +424,7 @@ export const HomePage: React.FC = () => {
         <div className="max-w-6xl mx-auto">
           <div className="text-center mb-20">
             
-                        <div className="w-full flex items-center justify-center mb-10 relative h-px">
-              <div className="absolute h-px bg-slate-200" style={{ width: '100vw', left: '50%', transform: 'translateX(-50%)' }}></div>
-            </div>
+                        <div className="w-full max-w-4xl mx-auto h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent mb-12 sm:mb-16" />
 
             <h2 id="tools-heading" className="text-4xl md:text-6xl font-black mb-6 text-black font-arabic tracking-tight">
               أدوات <span className="text-amber-600">الاحتراف</span>
@@ -507,9 +503,7 @@ export const HomePage: React.FC = () => {
       <section id="contact" className="py-20 sm:py-28 px-4 sm:px-6 bg-transparent relative z-10">
         <div className="max-w-5xl mx-auto text-center">
           
-          <div className="w-full flex items-center justify-center mb-10 relative h-px">
-            <div className="absolute h-px bg-slate-200" style={{ width: '100vw', left: '50%', transform: 'translateX(-50%)' }}></div>
-          </div>
+          <div className="w-full max-w-4xl mx-auto h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent mb-12 sm:mb-16" />
 
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-50 border border-amber-200 mb-4 shadow-2xs">
@@ -625,7 +619,7 @@ export const HomePage: React.FC = () => {
                 </div>
 
                 <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-[10px] font-mono font-bold">
-                  <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse" />
+                  <span className="w-2 h-2 rounded-full bg-amber-500" />
                   <span>CLEARANCE: ACTIVE</span>
                 </div>
               </div>
@@ -637,7 +631,7 @@ export const HomePage: React.FC = () => {
                 </div>
                 <div className="p-2.5 rounded-xl bg-slate-50 border border-slate-100">
                   <div className="text-[10px] text-slate-400 font-arabic font-semibold mb-0.5">قنوات التواصل</div>
-                  <div className="text-xs font-black text-emerald-600 font-arabic">متاحة ومباشرة</div>
+                  <div className="text-xs font-black text-amber-600 font-arabic">متاحة ومباشرة</div>
                 </div>
                 <div className="p-2.5 rounded-xl bg-slate-50 border border-slate-100 col-span-2 sm:col-span-1">
                   <div className="text-[10px] text-slate-400 font-arabic font-semibold mb-0.5">حماية البيانات</div>

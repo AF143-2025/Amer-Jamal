@@ -40,12 +40,6 @@ export const AmerCyberMark: React.FC<AmerCyberMarkProps> = ({
         {/* Subtle Ambient Radial Highlight */}
         <div className="absolute inset-0 bg-amber-400/10 rounded-xl sm:rounded-2xl blur-xs group-hover:bg-amber-400/20 transition-all pointer-events-none" />
 
-        {/* Live Online Ping Beacon */}
-        <span className="absolute -top-1 -right-1 flex h-2.5 w-2.5 pointer-events-none z-20">
-          <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-emerald-400 opacity-75" />
-          <span className="relative inline-flex rounded-full h-2.5 w-2.5 bg-emerald-500 border border-white shadow-2xs" />
-        </span>
-
         {/* SVG Cyber Shield Emblem */}
         <svg 
           width={config.svg} 

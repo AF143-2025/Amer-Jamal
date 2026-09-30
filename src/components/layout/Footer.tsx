@@ -1,7 +1,8 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Send, Mail, ShieldAlert } from 'lucide-react';
+import { Send, Mail } from 'lucide-react';
 import { InstagramIcon } from '../ui/Icons';
+import { AmerCyberMark } from '../ui/AmerCyberMark';
 import { siteConfig } from '../../data/siteConfig';
 import { Container } from './Container';
 
@@ -20,22 +21,22 @@ export const Footer: React.FC = () => {
   ];
 
   return (
-    <footer className="relative z-10 bg-white border-t border-slate-200 mt-20">
+    <footer className="relative z-10 bg-white border-t border-slate-200 mt-20" dir="rtl">
       <Container size="xl">
         <div className="py-16">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-12 text-right">
             
-            {/* Brand */}
-            <div className="col-span-1 md:col-span-1 space-y-6">
-              <div className="inline-flex items-center justify-center w-16 h-16 bg-black rounded-2xl mb-2 shadow-[0_10px_20px_rgba(0,0,0,0.2)]">
-                <ShieldAlert className="text-amber-500 w-8 h-8" strokeWidth={1.5} />
+            {/* Brand - Right side at bottom of page */}
+            <div className="col-span-1 md:col-span-1 space-y-4">
+              <div className="mb-3">
+                <AmerCyberMark size="md" showTooltip={false} />
               </div>
               <div>
-                <div className="font-black text-2xl text-black font-arabic tracking-tight">{siteConfig.name}</div>
+                <div className="font-black text-2xl text-slate-950 font-arabic tracking-tight">{siteConfig.name}</div>
                 <div className="text-xs text-slate-500 font-bold font-mono tracking-widest mt-1 uppercase">{siteConfig.nameEnglish}</div>
               </div>
-              <p className="text-sm text-black font-bold leading-relaxed max-w-xs">
-                منصة متخصصة في أمن المعلومات، الهندسة العكسية، واختبار الاختراق للحماية الاستباقية.
+              <p className="text-sm text-slate-600 font-medium leading-relaxed max-w-xs font-arabic">
+                طالب هندسة تقنيات أمن سيبراني — أبحاث الثغرات، اختبار الاختراق، وبناء الأدوات والحلول الدفاعية.
               </p>
             </div>
 

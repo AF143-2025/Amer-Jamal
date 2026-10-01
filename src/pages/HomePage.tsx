@@ -519,86 +519,86 @@ export const HomePage: React.FC = () => {
             للنقاشات التقنية، الاستشارات الأمنية، الإبلاغ المسؤول عن الثغرات، أو طلب الخدمات والمشاريع السيبرانية المتخصصة. يتم التعامل مع كافة المراسلات بسرية وموثوقية عالية.
           </p>
 
-          {/* Primary Interactive Contact Channels */}
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-4 sm:gap-6 mb-12 sm:mb-16" dir="rtl">
-            
-            {/* Telegram Card */}
-            <a 
-              href={siteConfig.socials.telegram} 
-              target="_blank" 
-              rel="noreferrer" 
-              className="group relative bg-white/90 backdrop-blur-xl rounded-2xl sm:rounded-3xl p-6 sm:p-7 border-2 border-slate-200/90 hover:border-sky-500 hover:shadow-[0_20px_40px_rgba(2,132,199,0.18)] transition-all duration-300 hover:-translate-y-1.5 flex flex-col text-right"
-            >
-              <div className="flex items-center justify-between mb-5">
-                <div className="w-12 h-12 rounded-xl bg-sky-500/10 text-sky-600 border border-sky-500/25 flex items-center justify-center group-hover:scale-110 transition-transform shadow-xs">
-                  <Send className="h-5 w-5" />
-                </div>
-                <span className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-sky-50 text-sky-700 border border-sky-200 text-[11px] font-bold font-arabic">
-                  <span className="w-2 h-2 rounded-full bg-sky-500 animate-pulse" />
-                  رد فوري
-                </span>
-              </div>
-              <h3 className="text-xl font-black text-slate-950 font-arabic mb-1 group-hover:text-sky-600 transition-colors">تيليجرام</h3>
-              <p className="text-xs font-mono text-slate-400 mb-3" dir="ltr">@a2m_8</p>
-              <p className="text-xs sm:text-sm text-slate-600 font-arabic leading-relaxed mb-5 flex-1">
-                القناة الأسرع للمحادثات الفورية، الاستفسارات التقنية العاجلة، والمناقشات المباشرة.
-              </p>
-              <div className="text-sky-600 font-bold text-xs sm:text-sm flex items-center justify-between pt-3 border-t border-slate-100 font-arabic">
-                <span>فتح المحادثة الفورية</span>
-                <ExternalLink className="h-4 w-4 group-hover:-translate-x-1 transition-transform" />
-              </div>
-            </a>
+          {/* Main Contact Container Rectangle */}
+          <div className="max-w-xl mx-auto bg-white rounded-[2.5rem] p-6 sm:p-9 border-2 border-slate-200 shadow-xl relative overflow-hidden mb-12 sm:mb-16" dir="rtl">
+            {/* Top Circular Icon */}
+            <div className="w-16 h-16 rounded-full bg-amber-500/10 border-2 border-amber-500/30 text-amber-600 flex items-center justify-center mx-auto mb-5 shadow-xs">
+              <Send className="w-7 h-7" />
+            </div>
 
-            {/* Instagram Card */}
-            <a 
-              href={siteConfig.socials.instagram} 
-              target="_blank" 
-              rel="noreferrer" 
-              className="group relative bg-white/90 backdrop-blur-xl rounded-2xl sm:rounded-3xl p-6 sm:p-7 border-2 border-slate-200/90 hover:border-rose-500 hover:shadow-[0_20px_40px_rgba(225,29,72,0.18)] transition-all duration-300 hover:-translate-y-1.5 flex flex-col text-right"
-            >
-              <div className="flex items-center justify-between mb-5">
-                <div className="w-12 h-12 rounded-xl bg-rose-500/10 text-rose-600 border border-rose-500/25 flex items-center justify-center group-hover:scale-110 transition-transform shadow-xs">
-                  <InstagramIcon className="w-5 h-5" />
-                </div>
-                <span className="px-2.5 py-1 rounded-full bg-rose-50 text-rose-700 border border-rose-200 text-[11px] font-bold font-arabic">
-                  محتوى وأبحاث
-                </span>
-              </div>
-              <h3 className="text-xl font-black text-slate-950 font-arabic mb-1 group-hover:text-rose-600 transition-colors">إنستغرام</h3>
-              <p className="text-xs font-mono text-slate-400 mb-3" dir="ltr">@amerjamal.cyber</p>
-              <p className="text-xs sm:text-sm text-slate-600 font-arabic leading-relaxed mb-5 flex-1">
-                متابعة اليوميات التقنية، المستجدات في الثغرات، والملخصات السيبرانية المرئية.
-              </p>
-              <div className="text-rose-600 font-bold text-xs sm:text-sm flex items-center justify-between pt-3 border-t border-slate-100 font-arabic">
-                <span>زيارة الحساب الرسمي</span>
-                <ExternalLink className="h-4 w-4 group-hover:-translate-x-1 transition-transform" />
-              </div>
-            </a>
+            <div className="text-center mb-6">
+              <h3 className="text-xl sm:text-2xl font-black text-slate-950 font-arabic mb-1">قنوات التواصل المباشر</h3>
+              <p className="text-xs sm:text-sm text-slate-500 font-arabic font-medium">متاح للرد والاستشارات عبر الوسائل التالية</p>
+            </div>
 
-            {/* Email Card */}
-            <a 
-              href={`mailto:${siteConfig.email}`} 
-              className="group relative bg-white/90 backdrop-blur-xl rounded-2xl sm:rounded-3xl p-6 sm:p-7 border-2 border-slate-200/90 hover:border-amber-500 hover:shadow-[0_20px_40px_rgba(217,119,6,0.18)] transition-all duration-300 hover:-translate-y-1.5 flex flex-col text-right"
-            >
-              <div className="flex items-center justify-between mb-5">
-                <div className="w-12 h-12 rounded-xl bg-amber-500/10 text-amber-600 border border-amber-500/25 flex items-center justify-center group-hover:scale-110 transition-transform shadow-xs">
-                  <Mail className="h-5 w-5" />
+            {/* Three Inner Rectangles: Telegram -> Instagram -> Email */}
+            <div className="space-y-3.5">
+              
+              {/* 1. Telegram Rectangle */}
+              <a
+                href={siteConfig.socials.telegram}
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center justify-between p-4 rounded-2xl bg-slate-50 border-2 border-slate-200/90 hover:border-sky-500 hover:bg-sky-50/40 hover:-translate-y-0.5 transition-all duration-200 group text-right"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="w-11 h-11 rounded-xl bg-sky-100 text-sky-600 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                    <Send className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <div className="text-sm font-black text-slate-950 font-arabic group-hover:text-sky-600 transition-colors">تيليجرام</div>
+                    <div className="text-xs font-mono font-bold text-slate-500" dir="ltr">@a2m_8</div>
+                  </div>
                 </div>
-                <span className="px-2.5 py-1 rounded-full bg-amber-50 text-amber-700 border border-amber-200 text-[11px] font-bold font-arabic">
-                  رسمي ومشفر
-                </span>
-              </div>
-              <h3 className="text-xl font-black text-slate-950 font-arabic mb-1 group-hover:text-amber-600 transition-colors">البريد الإلكتروني</h3>
-              <p className="text-xs font-mono text-slate-400 mb-3" dir="ltr">{siteConfig.email}</p>
-              <p className="text-xs sm:text-sm text-slate-600 font-arabic leading-relaxed mb-5 flex-1">
-                للمراسلات الرسمية المعمقة، طلبات الخدمات التقنية، والمشاريع الاستشارية.
-              </p>
-              <div className="text-amber-700 font-bold text-xs sm:text-sm flex items-center justify-between pt-3 border-t border-slate-100 font-arabic">
-                <span>إرسال بريد إلكتروني</span>
-                <ExternalLink className="h-4 w-4 group-hover:-translate-x-1 transition-transform" />
-              </div>
-            </a>
+                <div className="text-xs font-bold text-sky-600 flex items-center gap-1 font-arabic">
+                  <span>فتح المحادثة</span>
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </div>
+              </a>
 
+              {/* 2. Instagram Rectangle */}
+              <a
+                href={siteConfig.socials.instagram}
+                target="_blank"
+                rel="noreferrer"
+                className="flex items-center justify-between p-4 rounded-2xl bg-slate-50 border-2 border-slate-200/90 hover:border-rose-500 hover:bg-rose-50/40 hover:-translate-y-0.5 transition-all duration-200 group text-right"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="w-11 h-11 rounded-xl bg-rose-100 text-rose-600 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                    <InstagramIcon className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <div className="text-sm font-black text-slate-950 font-arabic group-hover:text-rose-600 transition-colors">إنستغرام</div>
+                    <div className="text-xs font-mono font-bold text-slate-500" dir="ltr">@amerjamal.cyber</div>
+                  </div>
+                </div>
+                <div className="text-xs font-bold text-rose-600 flex items-center gap-1 font-arabic">
+                  <span>زيارة الحساب</span>
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </div>
+              </a>
+
+              {/* 3. Email Rectangle */}
+              <a
+                href={`mailto:${siteConfig.email}`}
+                className="flex items-center justify-between p-4 rounded-2xl bg-slate-50 border-2 border-slate-200/90 hover:border-amber-500 hover:bg-amber-50/40 hover:-translate-y-0.5 transition-all duration-200 group text-right"
+              >
+                <div className="flex items-center gap-3">
+                  <div className="w-11 h-11 rounded-xl bg-amber-100 text-amber-600 flex items-center justify-center shrink-0 group-hover:scale-105 transition-transform">
+                    <Mail className="w-5 h-5" />
+                  </div>
+                  <div>
+                    <div className="text-sm font-black text-slate-950 font-arabic group-hover:text-amber-600 transition-colors">البريد الإلكتروني</div>
+                    <div className="text-xs font-mono font-bold text-slate-500" dir="ltr">{siteConfig.email}</div>
+                  </div>
+                </div>
+                <div className="text-xs font-bold text-amber-600 flex items-center gap-1 font-arabic">
+                  <span>إرسال بريد</span>
+                  <ExternalLink className="w-3.5 h-3.5" />
+                </div>
+              </a>
+
+            </div>
           </div>
 
           {/* Professional Security Clearance Identity Badge */}

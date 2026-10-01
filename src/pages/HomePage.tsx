@@ -616,56 +616,7 @@ export const HomePage: React.FC = () => {
             </div>
           </div>
 
-          {/* Professional Security Clearance Identity Badge */}
-          <div className="max-w-xl mx-auto relative group">
-            <div className="absolute -inset-1 bg-gradient-to-r from-amber-500/20 via-sky-500/20 to-emerald-500/20 rounded-3xl blur-xl opacity-60 group-hover:opacity-90 transition duration-500"></div>
-            
-            <div className="relative bg-white/95 backdrop-blur-xl rounded-2xl sm:rounded-3xl p-6 sm:p-8 border border-slate-200/90 shadow-xl overflow-hidden text-right" dir="rtl">
-              
-              <div className="flex items-center justify-between mb-6 pb-4 border-b border-slate-100">
-                <div className="flex items-center gap-3">
-                  <div className="w-11 h-11 rounded-xl bg-slate-950 text-amber-500 flex items-center justify-center shadow-md border border-slate-800">
-                    <Shield className="h-5 w-5 text-amber-500" />
-                  </div>
-                  <div>
-                    <div className="text-slate-950 font-black font-arabic text-base sm:text-lg">عامر جمال</div>
-                    <div className="text-slate-500 font-bold text-[11px] font-mono tracking-wider">AMER JAMAL • CYBERSECURITY</div>
-                  </div>
-                </div>
 
-                <div className="flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-[10px] font-mono font-bold">
-                  <span className="w-2 h-2 rounded-full bg-amber-500" />
-                  <span>CLEARANCE: ACTIVE</span>
-                </div>
-              </div>
-
-              <div className="grid grid-cols-2 sm:grid-cols-3 gap-3 mb-5 text-center">
-                <div className="p-2.5 rounded-xl bg-slate-50 border border-slate-100">
-                  <div className="text-[10px] text-slate-400 font-arabic font-semibold mb-0.5">الدور الرئيسي</div>
-                  <div className="text-xs font-black text-slate-800 font-arabic">أبحاث وهندسة الأمان السيبراني</div>
-                </div>
-                <div className="p-2.5 rounded-xl bg-slate-50 border border-slate-100">
-                  <div className="text-[10px] text-slate-400 font-arabic font-semibold mb-0.5">قنوات التواصل</div>
-                  <div className="text-xs font-black text-amber-600 font-arabic">متاحة ومباشرة</div>
-                </div>
-                <div className="p-2.5 rounded-xl bg-slate-50 border border-slate-100 col-span-2 sm:col-span-1">
-                  <div className="text-[10px] text-slate-400 font-arabic font-semibold mb-0.5">حماية البيانات</div>
-                  <div className="text-xs font-black text-slate-800 font-mono">End-to-End Encrypted</div>
-                </div>
-              </div>
-
-              <div className="flex flex-wrap items-center justify-between gap-3 pt-3 border-t border-slate-100 text-xs text-slate-500 font-arabic">
-                <span className="flex items-center gap-1.5 font-medium">
-                  <Lock className="w-3.5 h-3.5 text-amber-600" />
-                  تشفير كامل لكافة المحادثات والاستشارات
-                </span>
-                <Link to="/contact" className="text-amber-700 hover:text-amber-800 font-bold hover:underline flex items-center gap-1">
-                  صفحة التواصل الكاملة ←
-                </Link>
-              </div>
-
-            </div>
-          </div>
 
         </div>
       </section>

@@ -521,15 +521,17 @@ export const HomePage: React.FC = () => {
           </p>
 
           {/* Main Contact Container Rectangle */}
-          <div className="max-w-xl mx-auto bg-white rounded-[2.5rem] p-6 sm:p-9 border-2 border-slate-200 shadow-xl relative overflow-hidden mb-12 sm:mb-16 text-right" dir="rtl">
-            {/* Top Right Cyber Emblem from Footer */}
-            <div className="mb-6 text-right">
-              <div className="mb-3.5 inline-block group cursor-pointer">
+          <div className="max-w-xl mx-auto bg-white rounded-[2.5rem] p-6 sm:p-9 border-2 border-slate-200 shadow-xl relative overflow-hidden mb-12 sm:mb-16" dir="rtl">
+            {/* Top Centered Cyber Emblem (AmerCyberMark) */}
+            <div className="flex justify-center mb-4">
+              <div className="group cursor-pointer">
                 <AmerCyberMark size="lg" showTooltip={false} />
               </div>
+            </div>
 
-              {/* Name & Specialization */}
-              <h3 className="text-2xl sm:text-3xl font-black text-slate-950 font-arabic tracking-tight mb-2">
+            {/* Name & Specialization */}
+            <div className="text-center mb-7">
+              <h3 className="text-2xl sm:text-3xl font-black text-slate-950 font-arabic tracking-tight mb-1.5">
                 عامر جمال
               </h3>
               <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-50 border border-amber-200/80 text-amber-700 text-xs sm:text-sm font-bold font-arabic shadow-2xs">

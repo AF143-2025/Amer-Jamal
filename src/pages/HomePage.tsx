@@ -521,14 +521,29 @@ export const HomePage: React.FC = () => {
 
           {/* Main Contact Container Rectangle */}
           <div className="max-w-xl mx-auto bg-white rounded-[2.5rem] p-6 sm:p-9 border-2 border-slate-200 shadow-xl relative overflow-hidden mb-12 sm:mb-16" dir="rtl">
-            {/* Top Circular Icon */}
-            <div className="w-16 h-16 rounded-full bg-amber-500/10 border-2 border-amber-500/30 text-amber-600 flex items-center justify-center mx-auto mb-5 shadow-xs">
-              <Send className="w-7 h-7" />
+            {/* Top Interactive Personal Cybersecurity Circular Icon */}
+            <div className="relative group/emblem flex justify-center mb-4 cursor-pointer">
+              {/* Ambient Glow */}
+              <div className="absolute w-24 h-24 rounded-full bg-gradient-to-r from-amber-500/20 via-amber-400/25 to-sky-500/20 blur-xl opacity-75 group-hover/emblem:opacity-100 group-hover/emblem:scale-125 transition-all duration-500 pointer-events-none" />
+              
+              {/* Outer Circular Ring with Cyber Shield & Core */}
+              <div className="relative w-20 h-20 rounded-full bg-gradient-to-b from-slate-900 via-slate-950 to-black p-1 shadow-xl border-2 border-amber-500/40 group-hover/emblem:border-amber-400 group-hover/emblem:shadow-[0_0_25px_rgba(245,158,11,0.35)] transition-all duration-500 flex items-center justify-center overflow-hidden">
+                <div className="absolute inset-0 bg-gradient-to-b from-transparent via-amber-400/15 to-transparent animate-pulse pointer-events-none" />
+                <Shield className="w-9 h-9 text-amber-500 relative z-10 transition-transform duration-300 group-hover/emblem:scale-110" />
+                <Lock className="w-3.5 h-3.5 text-amber-300 absolute z-20 top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 transition-transform duration-300 group-hover/emblem:scale-125" />
+              </div>
             </div>
 
-            <div className="text-center mb-6">
-              <h3 className="text-xl sm:text-2xl font-black text-slate-950 font-arabic mb-1">قنوات التواصل المباشر</h3>
-              <p className="text-xs sm:text-sm text-slate-500 font-arabic font-medium">متاح للرد والاستشارات عبر الوسائل التالية</p>
+            {/* Name & Specialization */}
+            <div className="text-center mb-7">
+              <h3 className="text-2xl sm:text-3xl font-black text-slate-950 font-arabic tracking-tight mb-1.5">
+                عامر جمال
+              </h3>
+              <div className="inline-flex items-center gap-2 px-3.5 py-1 rounded-full bg-amber-50 border border-amber-200/80 text-amber-700 text-xs sm:text-sm font-bold font-arabic shadow-2xs">
+                <span>باحث أمني ومختبر اختراق</span>
+                <span className="text-slate-300 font-bold">•</span>
+                <span className="font-mono text-[11px] tracking-wide text-amber-800">Security Research & Pentesting</span>
+              </div>
             </div>
 
             {/* Three Inner Rectangles: Telegram -> Instagram -> Email */}

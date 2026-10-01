@@ -16,7 +16,7 @@ import {
   Send
 } from 'lucide-react';
 import { Container } from './Container';
-import { AmerProLogo } from '../ui/AmerProLogo';
+import { AmerCyberMark } from '../ui/AmerCyberMark';
 
 export const Navbar: React.FC<{ onOpenCommandPalette?: () => void }> = ({ onOpenCommandPalette }) => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -81,7 +81,7 @@ export const Navbar: React.FC<{ onOpenCommandPalette?: () => void }> = ({ onOpen
           
           {/* Brand - Right side in RTL with Professional Logo */}
           <Link to="/" className="flex items-center gap-2.5 sm:gap-3 group flex-shrink-0 select-none">
-            <AmerProLogo size="md" />
+            <AmerCyberMark size="sm" showTooltip={false} />
             <div className="flex flex-col text-right leading-none">
               <div className="flex items-center gap-1.5">
                 <span className="font-black text-[17px] sm:text-[20px] text-slate-950 font-arabic tracking-tight group-hover:text-amber-600 transition-colors">
@@ -164,7 +164,7 @@ export const Navbar: React.FC<{ onOpenCommandPalette?: () => void }> = ({ onOpen
                 onClick={() => setMobileMenuOpen(false)}
                 className="flex items-center gap-2.5"
               >
-                <AmerProLogo size="sm" />
+                <AmerCyberMark size="sm" showTooltip={false} />
                 <div className="flex flex-col text-right leading-none">
                   <span className="font-black text-lg text-slate-950 font-arabic tracking-tight">
                     عامر جمال

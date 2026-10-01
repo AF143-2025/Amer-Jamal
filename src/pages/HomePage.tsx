@@ -319,11 +319,11 @@ export const HomePage: React.FC = () => {
       </section>
 
             {/* 2. ABOUT PREVIEW SECTION */}
-      <section id="about" className="py-24 px-6 bg-transparent relative z-10" aria-labelledby="about-heading">
+      <section id="about" className="py-14 sm:py-16 px-6 bg-transparent relative z-10" aria-labelledby="about-heading">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-20">
+          <div className="text-center mb-12 sm:mb-14">
             
-                        <div className="w-full max-w-4xl mx-auto h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent mb-12 sm:mb-16" />
+            <div className="w-full max-w-4xl mx-auto h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent mb-8 sm:mb-10" />
 
             <h2 id="about-heading" className="text-4xl md:text-6xl font-black mb-6 text-black font-arabic tracking-tight">
               الفرق <span className="text-amber-600">السيبرانية</span>
@@ -419,13 +419,15 @@ export const HomePage: React.FC = () => {
               </Link>
             </article>
           </div>
-</div>
-      </section>{/* 3. FEATURED TOOLS SECTION */}
-      <section className="py-24 px-6 bg-transparent relative z-10" aria-labelledby="tools-heading">
+        </div>
+      </section>
+
+      {/* 3. FEATURED TOOLS SECTION */}
+      <section className="py-14 sm:py-16 px-6 bg-transparent relative z-10" aria-labelledby="tools-heading">
         <div className="max-w-6xl mx-auto">
-          <div className="text-center mb-20">
+          <div className="text-center mb-12 sm:mb-14">
             
-                        <div className="w-full max-w-4xl mx-auto h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent mb-12 sm:mb-16" />
+            <div className="w-full max-w-4xl mx-auto h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent mb-8 sm:mb-10" />
 
             <h2 id="tools-heading" className="text-4xl md:text-6xl font-black mb-6 text-black font-arabic tracking-tight">
               أدوات <span className="text-amber-600">الاحتراف</span>
@@ -435,7 +437,7 @@ export const HomePage: React.FC = () => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-10 sm:mb-12">
             
             {/* Tool 1 */}
             <Link to="/tools" className="group relative bg-white rounded-3xl p-8 text-center border-2 border-slate-200 hover:border-amber-500 transition-all duration-500 hover:-translate-y-2 hover:shadow-[0_20px_40px_rgba(245,158,11,0.15)] overflow-hidden">
@@ -501,10 +503,10 @@ export const HomePage: React.FC = () => {
       </section>
 
       {/* 4. CONTACT SECTION */}
-      <section id="contact" className="py-20 sm:py-28 px-4 sm:px-6 bg-transparent relative z-10">
+      <section id="contact" className="pt-14 sm:pt-16 pb-8 sm:pb-10 px-4 sm:px-6 bg-transparent relative z-10">
         <div className="max-w-5xl mx-auto text-center">
           
-          <div className="w-full max-w-4xl mx-auto h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent mb-12 sm:mb-16" />
+          <div className="w-full max-w-4xl mx-auto h-px bg-gradient-to-r from-transparent via-slate-200 to-transparent mb-8 sm:mb-10" />
 
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-50 border border-amber-200 mb-4 shadow-2xs">
@@ -516,12 +518,12 @@ export const HomePage: React.FC = () => {
             تواصل <span className="text-amber-600">معي</span>
           </h2>
           
-          <p className="text-slate-600 mb-10 sm:mb-14 font-medium max-w-2xl mx-auto text-sm sm:text-base md:text-lg leading-relaxed font-arabic">
+          <p className="text-slate-600 mb-8 sm:mb-10 font-medium max-w-2xl mx-auto text-sm sm:text-base md:text-lg leading-relaxed font-arabic">
             للنقاشات التقنية، الاستشارات الأمنية، الإبلاغ المسؤول عن الثغرات، أو طلب الخدمات والمشاريع السيبرانية المتخصصة. يتم التعامل مع كافة المراسلات بسرية وموثوقية عالية.
           </p>
 
           {/* Main Contact Container Rectangle */}
-          <div className="max-w-xl mx-auto bg-white rounded-[2.5rem] p-6 sm:p-9 border-2 border-slate-200 shadow-xl relative overflow-hidden mb-12 sm:mb-16" dir="rtl">
+          <div className="max-w-xl mx-auto bg-white rounded-[2.5rem] p-6 sm:p-9 border-2 border-slate-200 shadow-xl relative overflow-hidden mb-2 sm:mb-4" dir="rtl">
             {/* Top Centered Cyber Emblem (AmerCyberMark) */}
             <div className="flex justify-center mb-4">
               <div className="group cursor-pointer">

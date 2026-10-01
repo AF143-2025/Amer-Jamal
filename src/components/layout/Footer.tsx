@@ -28,7 +28,7 @@ export const Footer: React.FC = () => {
   ];
 
   return (
-    <footer className="relative z-10 bg-slate-50/70 border-t border-slate-200 mt-20" dir="rtl">
+    <footer className="relative z-10 bg-slate-50/70 border-t border-slate-200 mt-6 sm:mt-8" dir="rtl">
       <Container size="xl">
         <div className="py-14 sm:py-16">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 lg:gap-12 text-right">
